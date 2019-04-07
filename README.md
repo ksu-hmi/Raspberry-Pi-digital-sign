@@ -14,3 +14,6 @@ There will be 4 tabs that are actively running in the background at all times. A
 
 Security:
 Due to the nature of this information that will be displayed on this digital signage, there will need to be an RDP session that will be installed utilizing Ubuntu. This will help to keep the business sensitive information in a specific site. 
+
+Hardware Requirements: 
+In addition to the monitor to display, the Raspberry Pi will first need to have an operating system installed on a microSD chip. For testing, this is necessary to have a breadboard attached to properly restrict the power flow to the membranes. Although this can be done with built-in software on the Rasberry Pi, in order to prevent damage, we will install physical resistors just to ensure the longevity of the finished product. 
