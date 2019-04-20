@@ -74,6 +74,7 @@ Note: During hardware testing, was unable to get pip module to properly install 
 Week 4/ Final Week
 - [ ] Run QA / Quality Statistics on existing code
 - [ ] Write up in Roadmap future functionality wants / direction
+- [ ] Update Documentation to reflect current functionality and versioning
 - [ ] Include future direction of project in PowerPoint Presentation
 - [ ] Complete PowerPoint Presentation
 - [ ] Practice presentation
