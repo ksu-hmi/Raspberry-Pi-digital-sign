@@ -16,36 +16,40 @@ import time
 # browser.get('https://www.google.com')
 # browser.close()
  
-
+# Will need to test that the pins are connected properly prior to uncommenting the functionality
 #set gpio numbering mode and define input pin
 
 gpio.setcfg(port.1, gpio.INPUT)
 gpio.pullup(port.1, gpio.PULLUP)
 while true:
     if gpio.input(1) != 0:
-        webbrowser.close()
-        webbrowser.open('http://www.yahoo.com')
-        while true:
-            time.sleep(300)
-            driver.refresh()
+         print("Button 1 was Pressed")
+#        webbrowser.close()
+#        webbrowser.open('http://www.yahoo.com')
+#        while true:
+#            time.sleep(300)
+#            driver.refresh()
     elif gpio.input(2) != 0:
-        webbrowser.close()
-        webbrowser.open('http://www.cnn.com')
-        while true:
-            time.sleep(300)
-            driver.refresh()
+        print("Button 2 was Pressed")
+#        webbrowser.close()
+#        webbrowser.open('http://www.cnn.com')
+#        while true:
+#            time.sleep(300)
+#            driver.refresh()
     elif gpio.input(3) != 0:
-        webbrowser.close()
-        webbrowser.open('http://www.anotherwebsite.com')
-        while true:
-            time.sleep(300)
-            driver.refresh()
+        print("Button 3 was Pressed")
+#        webbrowser.close()
+#        webbrowser.open('http://www.anotherwebsite.com')
+#        while true:
+#            time.sleep(300)
+#            driver.refresh()
     elif gpio.input(4) != 0:
-        webbrowser.close()
-        webbrowser.open('http://www.alsoanotherwebsite.com')
-        while true:
-            time.sleep(300)
-            driver.refresh()
+        print("Button 4 was Pressed")
+#        webbrowser.close()
+#        webbrowser.open('http://www.alsoanotherwebsite.com')
+#        while true:
+#            time.sleep(300)
+#            driver.refresh()
     else:
         print "Please press a button to pull up a report"
 driver.quit()
