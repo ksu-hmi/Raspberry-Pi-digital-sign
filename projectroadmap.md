@@ -65,10 +65,20 @@ Week 3 / Sprint 3
 - [ ] Get Raspberry Pi whitelisted
 - [ ] Update code with proper links to pull specific reports (replace generic website placeholders)
 - [ ] Verify functionality
+- [ ] Discuss current state with Dr. Thomas if unable to get properly functioning
 - [ ] Troubleshoot connectivity as needed
-- [ ] Run QA statistics on code as it is at this point
-- [x] Update Roadmap / tasks lists based on research and testing results
-- [ ] Complete PowerPoint Presentation
+- [ ] Update Roadmap / tasks lists based on research and testing results
+
 Note: During hardware testing, was unable to get pip module to properly install RPi.GPIO and other required modules for further coding and testing. Spent approximately 5-6 hours testing and attempting to troubleshoot hardware by reviewing user forums and chat rooms on similar issue. Setup meeting with Dr. Thomas to troubleshoot on Monday afternoon 4/22. In meantime, purchased additional MicroSD cards so that I can attempt other Operating Systems and see if they are able to allow Python Modules to be properly installed. 
+
+Week 4/ Final Week
+- [ ] Run QA / Quality Statistics on existing code
+- [ ] Write up in Roadmap future functionality wants / direction
+- [ ] Include future direction of project in PowerPoint Presentation
+- [ ] Complete PowerPoint Presentation
+- [ ] Practice presentation
+- [ ] Give Presentation
+- [ ] Celebrate 
+
 
 
