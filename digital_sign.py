@@ -31,7 +31,7 @@ gpio.setup(button4,gpio.IN,pull_up_down=gpio.PUD_UP)
 #gpio.setcfg(port.1, gpio.INPUT)
 #gpio.pullup(port.1, gpio.PULLUP)
 try:
-    print "Please press a button (1-4) to pull up a report."
+    print ("Please press a button (1-4) to pull up a report.")
     while True:
 
         if gpio.input(button1) == False:
