@@ -1,4 +1,4 @@
-python3 -m pip install --user selenium
+#python3 -m pip install --user selenium
 #import GPIO library
 import rpi.gpio as gpio
 
