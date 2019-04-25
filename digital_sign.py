@@ -1,6 +1,6 @@
 #python3 -m pip install --user selenium
 #import GPIO library
-import rpi.gpio as gpio
+import RPi.GPIO as gpio
 import time
 #import URL Library
 #import urllib
@@ -18,7 +18,7 @@ import time
  
 # Will need to test that the pins are connected properly prior to uncommenting the functionality
 #set gpio numbering mode and define input pin
-gpio.setmode(GPIO.BCM)
+gpio.setmode(gpio.BCM)
 button1 = 17
 button2 = 4
 button3 = 3
