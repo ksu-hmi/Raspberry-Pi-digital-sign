@@ -1,28 +1,25 @@
-#python3 -m pip install --user selenium
+
 #import GPIO library
 import RPi.GPIO as gpio
 import time
 #import URL Library
-#import urllib
+import urllib
+#Import OS commands
+import os
 
 #import WebBrowser
-#import webbrowser
+import webbrowser
 
-# import Selenium
-#from selenium import webdriver
-
-
-# browser = webdriver.chrome(executable_path = 'filepathhere')
-# browser.get('https://www.google.com')
-# browser.close()
+#variable for OS
+browser='chromium'
  
 # Will need to test that the pins are connected properly prior to uncommenting the functionality
 #set gpio numbering mode and define input pin
 gpio.setmode(gpio.BCM)
-button1 = 17
-button2 = 4
-button3 = 3
-button4 = 2
+button1 = 4
+button2 = 17
+button3 = 2
+button4 = 3
 gpio.setup(button1,gpio.IN,pull_up_down=gpio.PUD_UP)
 gpio.setup(button2,gpio.IN,pull_up_down=gpio.PUD_UP)
 gpio.setup(button3,gpio.IN,pull_up_down=gpio.PUD_UP)
@@ -36,29 +33,33 @@ try:
 
         if gpio.input(button1) == False:
              print("Button 1 was Pressed")
-    #        webbrowser.close()
-    #        webbrowser.open('http://www.yahoo.com')
+             time.sleep(2)
+             os.system("pkill "+browser)
+             webbrowser.open('http://www.yahoo.com')
     #        while true:
     #            time.sleep(300)
     #            driver.refresh()
         elif gpio.input(button2) == False:
             print("Button 2 was Pressed")
-    #        webbrowser.close()
-    #        webbrowser.open('http://www.cnn.com')
+            time.sleep(2)
+            os.system("pkill "+browser)
+            webbrowser.open('http://www.cnn.com')
     #        while true:
     #            time.sleep(300)
     #            driver.refresh()
         elif gpio.input(button3) == False:
             print("Button 3 was Pressed")
-    #        webbrowser.close()
-    #        webbrowser.open('http://www.anotherwebsite.com')
+            time.sleep(2)
+            os.system("pkill "+browser)
+            webbrowser.open('http://www.anotherwebsite.com')
     #        while true:
     #            time.sleep(300)
     #            driver.refresh()
         elif gpio.input(button4) == False:
             print("Button 4 was Pressed")
-    #        webbrowser.close()
-    #        webbrowser.open('http://www.alsoanotherwebsite.com')
+            time.sleep(2)
+            os.system("pkill "+browser)
+            webbrowser.open('http://www.alsoanotherwebsite.com')
     #        while true:
     #            time.sleep(300)
     #            driver.refresh()
