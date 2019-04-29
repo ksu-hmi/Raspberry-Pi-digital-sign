@@ -1,10 +1,11 @@
 
 #import GPIO library
 import RPi.GPIO as gpio
+# Import Time Library
 import time
 #import URL Library
 import urllib
-#Import OS commands
+#Import OS Library
 import os
 
 #import WebBrowser
@@ -27,18 +28,18 @@ gpio.setup(button4,gpio.IN,pull_up_down=gpio.PUD_UP)
 
 #gpio.setcfg(port.1, gpio.INPUT)
 #gpio.pullup(port.1, gpio.PULLUP)
+    
 try:
     print ("Please press a button (1-4) to pull up a report.")
     while True:
-
         if gpio.input(button1) == False:
-             print("Button 1 was Pressed")
-             time.sleep(2)
-             os.system("pkill "+browser)
-             webbrowser.open('http://www.yahoo.com')
-    #        while true:
-    #            time.sleep(300)
-    #            driver.refresh()
+            print("Button 1 was Pressed")
+            time.sleep(2)
+            os.system("pkill "+browser)
+            webbrowser.open('http://www.yahoo.com')
+    #       while true:
+    #       time.sleep(300)
+    #       driver.refresh()
         elif gpio.input(button2) == False:
             print("Button 2 was Pressed")
             time.sleep(2)
