@@ -35,32 +35,32 @@ try:
         if gpio.input(button1) == False:
             print("Button 1 was Pressed")
             time.sleep(2)
-            os.system("pkill "+browser)
-            webbrowser.open('http://www.yahoo.com')
+       #     os.system("pkill "+browser)
+            webbrowser.open('https://envision.visualvault.com/app/VisualVault/Main/DashboardDesigner?dashboardId=6&mode=1')
     #       while true:
     #       time.sleep(300)
     #       driver.refresh()
         elif gpio.input(button2) == False:
             print("Button 2 was Pressed")
             time.sleep(2)
-            os.system("pkill "+browser)
-            webbrowser.open('http://www.cnn.com')
+      #      os.system("pkill "+browser)
+            webbrowser.open('https://envision.visualvault.com/app/VisualVault/Main/DashboardDesigner?dashboardId=10&mode=1')
     #        while true:
     #            time.sleep(300)
     #            driver.refresh()
         elif gpio.input(button3) == False:
             print("Button 3 was Pressed")
             time.sleep(2)
-            os.system("pkill "+browser)
-            webbrowser.open('http://www.anotherwebsite.com')
+     #       os.system("pkill "+browser)
+            webbrowser.open('https://envision.visualvault.com/app/VisualVault/Main/DashboardDesigner?dashboardId=11&mode=1&SiteCode=W-VAC-PCH')
     #        while true:
     #            time.sleep(300)
     #            driver.refresh()
         elif gpio.input(button4) == False:
             print("Button 4 was Pressed")
             time.sleep(2)
-            os.system("pkill "+browser)
-            webbrowser.open('http://www.alsoanotherwebsite.com')
+     #       os.system("pkill "+browser)
+            webbrowser.open('https://envision.visualvault.com/app/VisualVault/Main/DashboardDesigner?dashboardId=11&mode=1&SiteCode=MHJ')
     #        while true:
     #            time.sleep(300)
     #            driver.refresh()
